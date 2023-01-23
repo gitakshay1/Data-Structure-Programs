@@ -11,11 +11,11 @@ namespace Data_Structure_Programs
         public Node Head;
         public void Ordered(string str)
         {
-            string text = File.ReadAllText(@"C:\Users\aksha\Assignments\Data-Structure-Programs\Data Structure Programs\Ordered.txt");
+            string text = File.ReadAllText(@"C:\Users\aksha\Assignments\Data-Structure-Programs\Data Structure Programs\UnOrdered.txt");
 
             string[] words = text.Split(' ');
 
-            Array.Sort(words);
+            
 
             for (int i = 0; i < words.Length; i++)
             {
@@ -64,7 +64,7 @@ namespace Data_Structure_Programs
             }
             string concat = string.Concat(array);
             Console.WriteLine(concat);
-            File.WriteAllText(@"C:\Users\aksha\Assignments\Data-Structure-Programs\Data Structure Programs\Ordered.txt", concat);
+            File.WriteAllText(@"C:\Users\aksha\Assignments\Data-Structure-Programs\Data Structure Programs\UnOrdered.txt", concat);
 
         }
 
