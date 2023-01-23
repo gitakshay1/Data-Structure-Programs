@@ -9,7 +9,6 @@ namespace Data_Structure_Programs
     internal class Ordered_List
     {
         public Node Head;
-
         public void Ordered(string str)
         {
             string text = File.ReadAllText(@"C:\Users\aksha\Assignments\Data-Structure-Programs\Data Structure Programs\Ordered.txt");
@@ -68,5 +67,7 @@ namespace Data_Structure_Programs
             File.WriteAllText(@"C:\Users\aksha\Assignments\Data-Structure-Programs\Data Structure Programs\Ordered.txt", concat);
 
         }
+
+
     }
 }
